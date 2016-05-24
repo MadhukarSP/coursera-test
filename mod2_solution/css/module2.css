@@ -1,0 +1,92 @@
+/* Border box all the elements in the file */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS", Helvetica, sans-serif
+}
+
+/***** h1 tag styling *****/
+h1 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+/***** Section styling *****/
+section {
+	position: relative;
+	background-color: #aaaaaa;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+/***** Section header styling *****/
+section > header {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+	padding: 5px;
+	min-width: 100px;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+/***** Section article styling *****/
+section > article {
+	clear: left;
+	position: relative;
+	top: 30px;
+	left: 0px;
+	padding: 10px 10px 40px 10px;
+	margin: 10px;
+}
+
+#section1 > header {
+	background-color: #A28686;
+}
+
+#section2 > header {
+	background-color: #8E4343;
+	color: #ffffff;
+}
+
+#section3 > header {
+	background-color: #E6E437;
+}
+
+/******** I have included only the required values at below media query ********/
+
+/********** For Desktop view, below query will be applied to the site **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** For Tablet view, below query will be applied to the site **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** For Mobile view, below query will be applied to the site **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
+
