@@ -1,0 +1,86 @@
+/* Border box all the elements in the file */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS", Helvetica, sans-serif
+}
+
+/***** h1 tag styling *****/
+h1 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+/***** Section styling *****/
+section {
+	position: relative;
+	background-color: #aaaaaa;
+	border: 1px solid black;
+	margin: 10px;
+}
+
+/***** Section header styling *****/
+section > h4 {
+	font-size: 1.45em;
+	text-align: center;
+	font-weight: bold;
+}
+
+/***** Section article styling *****/
+section > article {
+	clear: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px;
+}
+
+/***** nav-list styling *****/
+#nav-list>li{
+	border-top: 3px solid #000;
+}
+#nav-list a {
+	background-color: #FFFF00;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.40em;
+}
+#nav-list a:hover {
+  	background-color: #00FF00;
+}
+
+/***** navbar styling *****/
+.navbar-nav {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.navbar {
+	border-radius: 0;	
+}
+.navbar-brand p {
+	font-size: 1.4em;
+	color: #111111;
+	font-weight: bold;
+}
+
+/***** navbar Header styling *****/
+#header-nav {
+	border-top-color: #000;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    background-color: #bbb;
+}
+.navbar-header button.navbar-toggle {
+    border: 2px solid #61122f;	
+}
+
+
+
+
